@@ -16,6 +16,7 @@ RUN sudo apt-get -qy install graphviz
 
 # RUN cd /home/sage
 RUN sage -pip install dot2tex
+RUN sage -pip install RISE
 # RUN cd /home
 
 
