@@ -15,7 +15,7 @@ FROM sagemath/sagemath:8.7
 
 ## RUN cd /home/sage
 #RUN sage -pip install dot2tex
-#RUN sage -pip install RISE
+RUN sage -pip install RISE
 ## RUN cd /home
 
 
@@ -26,4 +26,4 @@ FROM sagemath/sagemath:8.7
 ## Make sure the contents of our repo are in ${HOME}
 #COPY . ${HOME}
 COPY --chown=sage:sage . ${HOME}
-RUN sage -pip install -e .
+#RUN sage -pip install -e .
